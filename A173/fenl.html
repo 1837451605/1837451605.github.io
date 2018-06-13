@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类-京东</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fa fa-home"><span>首页</span></i></a></li>
+				<li><a class="a" href=""><i class="fa fa-list"><span>分类</span></i></a></li>
+				<li><a href=""><i class="fa fa-question-circle-o"><i class="b"></i><span>觅Me</span></i></a></li>
+				<li><a href=""><i class="fa fa-shopping-cart"><span>购物车</span></i></a></li>
+				<li><a href=""><i class="fa fa-user-o"><span>我的</span></i></a></li>
+			</ul> 
+		</nav>
+		<div class="top-jd">
+		<div class="le"><span><a href="" class="ca">X</a><img src="img/top-jdlogo.png" alt=""></span><p>打开京东App，购物更轻松</p></div>
+        <div class="le1">
+        <button>立即执行</button>
+        </div>
+        </div>
+		<div class="search">
+			<div class="left">
+				<i class="fa fa-qrcode"></i>
+				<span>扫阿扫</span>
+			</div>
+			<div class="center">
+				<i class="fa fa-search"></i>
+				<i class="fa fa-microphone"></i>
+				<input type="text" placeholder="华为荣耀8" />
+			</div>
+			<div class="right">
+				<i class="fa fa-commenting-o"></i>
+				<span>消息</span>
+			</div>
+		</div>
+		<div class="baikuai"></div>
+		<div class="sort-main">
+		<div class="row">
+		<div class="wcbl">
+		<div class="col-xs-3">
+		    <ul class="cbl">
+		        <li>推荐分类</li>
+		        <li>京东超市</li>
+		        <li>全球购</li>
+		        <li>男装</li>
+		        <li>女装</li>
+		        <li>男鞋</li>
+		        <li>女鞋</li>
+		        <li>内衣配饰</li>
+		        <li>全球购</li>
+		        <li>男装</li>
+		        <li>女装</li>
+		        <li>男鞋</li>
+		        <li>女鞋</li>
+		        <li>内衣配饰</li>
+		        <li>全球购</li>
+		        <li>男装</li>
+		        <li>女装</li>
+		        <li>男鞋</li>
+		        <li>女鞋</li>
+		        <li>内衣配饰</li>
+		        <li>全球购</li>
+		        <li>男装</li>
+		        <li>女装</li>
+		        <li>男鞋</li>
+		        <li>女鞋</li>
+		        <li>内衣配饰</li>
+		    </ul>
+		</div>
+		</div>
+		<div class="col-xs-9" id="sortright">
+		<div class="top" v-for="sort in sortt">
+            <div class="ri">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div id="z">
+               <div class="fenlei">
+                   <p>分类推荐</p>
+                    <div class="row">
+                    <ul>
+                        <li class="col-xs-4" v-for="arr in arrs">
+                            <img :src="arr.img" :alt="arr.name">
+                            <h3>{{arr.name}}</h3>
+                        </li>
+                    </ul>
+                    </div>
+               </div>
+                <div class="fenlei">
+                    <p>京东超市</p>
+                    <div class="row">
+                        <ul>
+                            <li class="col-xs-4" v-for="arr in arrs1">
+                                <img :src="arr.img" :alt="arr.name">
+                                <h3>{{arr.name}}</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fenlei">
+                    <p>全球购</p>
+                    <div class="row">
+                        <ul>
+                            <li class="col-xs-4" v-for="arr in arrs2">
+                                <img :src="arr.img" :alt="arr.name">
+                                <h3>{{arr.name}}</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fenlei">
+                    <p>男装</p>
+                    <div class="row">
+                        <ul>
+                            <li class="col-xs-4" v-for="arr in arrs3">
+                                <img :src="arr.img" :alt="arr.name">
+                                <h3>{{arr.name}}</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fenlei">
+                <p>女装</p>
+                <div class="row">
+                    <ul>
+                        <li class="col-xs-4" v-for="arr in arrs4">
+                            <img :src="arr.img" :alt="arr.name">
+                            <h3>{{arr.name}}</h3>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="fenlei">
+                <p>男鞋</p>
+                <div class="row">
+                    <ul>
+                        <li class="col-xs-4" v-for="arr in arrs5">
+                            <img :src="arr.img" :alt="arr.name">
+                            <h3>{{arr.name}}</h3>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="fenlei">
+                <p>女鞋</p>
+                <div class="row">
+                    <ul>
+                        <li class="col-xs-4" v-for="arr in arrs6">
+                            <img :src="arr.img" :alt="arr.name">
+                            <h3>{{arr.name}}</h3>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="fenlei">
+                <p>内衣服饰</p>
+                <div class="row">
+                    <ul>
+                        <li class="col-xs-4" v-for="arr in arrs6">
+                            <img :src="arr.img" :alt="arr.name">
+                            <h3>{{arr.name}}</h3>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+		</div>
+		</div>
+		</div>
+		</div>
+  <div class="baikuai1"></div>
+	 
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <script src="js/fl.js"></script>
+    <script>
+        
+        var swiper = new Swiper('.swiper-container', {
+            loop:true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+        
+        var swiper = new Swiper('.swi', {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
+	</body>
+</html>
